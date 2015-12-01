@@ -41,6 +41,8 @@ http://beedog.github.io/image001.png
 http://beedog.github.io/image205.png
 ```
 
+Shell script examples can be found in the [index.html](http://beedog.github.io).
+
 The order and permanence of a particular Beedog image is **not** guaranteed.
 
 ### Contributing
