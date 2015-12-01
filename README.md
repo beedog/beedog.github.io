@@ -41,6 +41,18 @@ http://beedog.github.io/image001.png
 http://beedog.github.io/image205.png
 ```
 
+The order and permanence of a particular Beedog image is **not** guaranteed.
+
+### Contributing
+
+In the spirit of the original site, I'm happy to accept new pictures of Beedogs.
+Please only submit images that you're the rightful owner of (or are acceptably
+licensed).
+
+Additionally, I probably made some mistakes during image conversion/renaming.
+If you find duplicates or know of a missing Beedog, tell me and I'll try to fix
+it.
+
 ### License
 
 The original [beedogs.com](beedogs.com) was curated by Gina Zycher.
