@@ -7,19 +7,41 @@
 			font-family: monospace;
 		}
 	</style>
+	<script type="text/javascript">
+		function makeurl(count) {
+			var num = Math.floor(Math.random() * count) + 1;
+			var url = "http://beedog.github.io/image" + num + ".png"
+			document.getElementById("beedog").src = url;
+		}
+
+		function beedog() {
+			var req = new XMLHttpRequest();
+			req.onreadystatechange = function() {
+				if (req.readyState == 4 && req.status == 200) {
+					makeurl(req.responseText);
+				}
+			}
+
+			req.open("GET", "http://beedog.github.io/count", true);
+			req.send(null);
+		}
+	</script>
 </head>
-<body>
+<body onload="beedog();">
 	<h2>Beedogs!</h2>
 	<p>
 		For more information/an explanation, see the
 		<a href="https://github.com/beedog/beedog.github.io/blob/master/README.md">README</a>.
 	</p>
 
-	<h2>Consuming the Beedogs</h2>
+	<h2>Consuming the Beedogs:</h2>
 	<h3>Getting the current Beedog count:</h3>
 	<code>$ count=$(curl http://beedog.github.io/count)</code>
 
 	<h3>Getting a random Beedog image:</h3>
 	<code>$ curl http://beedog.github.io/image$(shuf -i 1-${count} -n 1).png</code>
+
+	<h3>JS demo (see page source):</h3>
+	<img id="beedog" src="">
 </body>
 </html>
