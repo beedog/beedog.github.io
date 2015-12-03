@@ -2,7 +2,7 @@ beedog.github.io
 ================
 
 A static resource for Beedogs, resurrected from the original (now dead)
-[site](beedogs.com).
+[site](http://beedogs.com).
 
 ### Background
 
