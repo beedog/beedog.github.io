@@ -10,7 +10,7 @@
 	<script type="text/javascript">
 		function makeurl(count) {
 			var num = Math.floor(Math.random() * count) + 1;
-			var url = "http://beedog.github.io/image" + num + ".png"
+			var url = "https://beedog.github.io/image" + num + ".png"
 			document.getElementById("beedog").src = url;
 		}
 
@@ -36,10 +36,10 @@
 
 	<h2>Consuming the Beedogs:</h2>
 	<h3>Getting the current Beedog count:</h3>
-	<code>$ count=$(curl http://beedog.github.io/count)</code>
+	<code>$ count=$(curl https://beedog.github.io/count)</code>
 
 	<h3>Getting a random Beedog image:</h3>
-	<code>$ curl http://beedog.github.io/image$(shuf -i 1-${count} -n 1).png</code>
+	<code>$ curl https://beedog.github.io/image$(shuf -i 1-${count} -n 1).png</code>
 
 	<h3>JS demo (see page source):</h3>
 	<img id="beedog" src="">
